@@ -1,0 +1,46 @@
+.avantageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    max-width: 1000px;
+    margin: auto;
+    flex-wrap: wrap;
+
+    @media screen and (max-width:880px) {
+        max-width: 500px;
+    }
+    
+    
+    & figure {
+        width: 24%;
+        min-width: 215px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+
+        @media screen and (max-width:430px) {
+            min-width: 150px;
+        }
+
+
+        & figcaption {
+            text-align: center;
+            margin: 15px 0 0 0;
+            font-size: large;
+            width: 220px;
+            @media screen and (max-width:430px) {
+               width: 170px;
+               font-size: 16px;
+            }
+        }
+        & img {
+            border-radius: 100px;
+            width: 90%;
+            max-width: 175px;
+            height: fit-content;
+            object-fit: cover;
+        }
+    }
+
+}

@@ -1,0 +1,282 @@
+.firstSection {
+    position: relative;
+    height: auto;
+    margin: 0;
+    & img {
+        height: 65vh;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+        box-sizing: border-box;
+    }
+    & div.title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 3%;
+        width: 100%;
+        @media screen and (max-width: 768px) {
+                top: 0;
+        }
+        & h1 {
+            font-size: 35px;
+            color: white;
+            font-family: "poppins", "Font Awesome 6 Free", Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-weight: 700;
+            text-shadow: 2px 2px 2px rgb(199, 123, 0);
+            margin-bottom: 5px;
+
+            @media screen and (max-width: 768px) {
+                margin: 10px ;
+            }
+            @media screen and (max-width: 620px) {
+                width: 90%;
+                font-size: 30px;
+            }
+            @media screen and (max-width: 460px) {
+                font-size: 22px;
+            }
+        }
+
+        & h2 {
+            color: white;
+            width: 45%;
+            text-align: center;
+            font-family: "Montserrat", "Helvet";
+            margin-top: 10px;
+            font-size: 18px;
+            text-shadow: 2px 2px 4px rgb(146, 91, 2);
+            @media screen and (max-width: 768px) {
+                width: 80%;
+                font-size: 18px;
+                margin-top: 0;
+            }
+            @media screen and (max-width: 500px) {
+                font-size: 15px;
+            }
+
+        }
+
+        & a {
+            text-decoration: none;
+            color: white;
+            text-shadow: 2px 2px 4px rgb(154, 95, 0);
+            font-size: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            transition: all 0.2s;
+            z-index: 1000;
+
+            & svg {
+                font-size: 48px;
+                color: green;
+                margin-right: 10px;
+            }
+            &:hover {
+                color: #e08600;
+                scale: 1.1;
+                & svg {
+                    color: #e08600;
+                }
+            }
+        }
+    }
+    & .slider {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin-top: 400px;
+        @media screen and (max-width: 500px) {
+        }
+        & a {
+            width: auto;
+            height: 80px;
+            margin-top: 90px;
+        }
+        
+        & .fa-chevron-right {
+            font-size: 48px;
+            color: black;
+            transform: rotate(90deg);
+            background-color: #FFBD59;
+            width: 80px;
+            height: 80px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.5s ease-in-out;
+            margin-top: 80%;
+
+            &:hover {
+                background-color: #e08600;
+                transform: rotate(450deg);
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.activities {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background-color: #706A6A;
+    & p {
+        color: #fff;
+        text-align: center;
+        font-size: large;
+    }
+
+    & .diviseur {
+        position: absolute;
+        top: -60px;
+        width: 100%;
+        overflow: hidden;
+        z-index: -1;
+        & svg {
+            width: 100%;
+        }
+        @media screen and (max-width: 500px) {
+            top: -50px;
+        }
+    }
+    
+    & .slogan {
+        font-family: "amiri";
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 0px;
+        margin-top: 15px;
+        
+        @media screen and (max-width: 500px) {
+            margin-top: 0;
+            line-height: 28px;
+        }
+
+        & span {
+            font-weight: bold;
+        }
+    }
+    & .underSlogan {
+        margin: 0px 10px auto 10px;
+        @media screen and (max-width: 500px) {
+            font-size: 15px;
+        }
+    }
+    & .sloganAvantage {
+        margin: auto 10px 0 10px;
+        @media screen and (max-width: 500px) {
+            font-size: 15px;
+        }
+    }
+
+    & .bottomDiviseur {
+        position: absolute;
+        width: 100%;
+        bottom: -50px;
+        z-index: -1;
+        & svg {
+            width: 100%;
+        }
+        @media screen and (max-width:1000px) {
+            bottom: -55px;
+        }
+    }
+}
+
+.avantageSection {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    & h2 {
+        color: #000;
+        text-align: center;
+        text-shadow: 2px 4px 8px rgba(255, 189, 89, 0.66);
+        font-family: Poppins;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 15px;
+    }
+
+}
+
+.gallery {
+    margin: 0 auto 10px auto;
+    padding-bottom: 20px;
+    width: 100%;
+    position: relative;
+    background-color: #FFBD59;
+
+    & .galleryTopDiviseur {
+        position: absolute;
+        width: 100%;
+        top: -50px;
+        z-index: -1;
+        & svg {
+            width: 100%;
+            transform: rotate(180deg);
+        }
+        @media screen and (max-width:1000px) {
+            top: -55px;
+        }
+    }
+
+    & h2 {
+        color: #FFF;
+        text-align: center;
+        text-shadow: 2px 4px 20px #000;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        font-family: Poppins;
+    }
+
+    & .galleryBottomDiviseur {
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+        bottom: -90px;
+        z-index: -1;
+        overflow: hidden;
+        & svg {
+            width: 100%;
+            overflow: hidden;
+        }
+        @media screen and (max-width:1000px) {
+            bottom: -90px;
+            left: 0;
+        }
+        @media screen and (max-width:600px) {
+            bottom: -80px;
+            left: 0;
+        }
+
+    }
+}
+
+.googleAvis {
+    display: none;
+    margin: 50px auto;
+    & h2 {
+        color: #000;
+        text-align: center;
+        text-shadow: 2px 4px 8px rgba(255, 189, 89, 0.66);
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        font-family: Poppins;
+    }
+}

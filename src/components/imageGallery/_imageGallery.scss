@@ -1,0 +1,135 @@
+.gallerieContainer {
+    width: 95%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & div {
+        width: 1000px;
+        display: flex;
+        justify-content: baseline;
+        flex-wrap: wrap;
+
+        @media screen and (max-width:1012px) {
+            width: 720px;
+        }
+        @media screen and (max-width:751px) {
+            width: 480px;
+        }
+        @media screen and (max-width:509px) {
+            width: 370px;
+        }
+        @media screen and (max-width:400px) {
+            width: 320px;
+        }
+
+
+        & figure {
+            width: 230px;
+            height: 145px;
+            margin: 5px;
+
+            @media screen and (max-width:509px) {
+            width: 175px;
+            height: 100px;
+            }
+            @media screen and (max-width:400px) {
+                width: 150px;
+            }
+
+            & img {
+                width: 100%;
+                box-sizing: border-box;
+                object-fit: cover;
+                height: 100%;
+                border-radius: 20px;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    & .overlayGallery {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.315);
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & .overlayToClose {
+            z-index: 101;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        & img {
+            width: 75%;
+            height: 75%;
+            border: 2px solid #fff;
+            border-radius: 25px;
+            box-sizing: border-box;
+            object-fit: cover;
+            z-index: 1100;
+            @media screen and (max-width:500px) {
+            height: 35%;
+            }
+        }
+        & .nextImage {
+            position: absolute;
+            top: 49%;
+            right: 8%;
+            font-size: 50px;
+            z-index: 1100;
+
+            &:hover {
+                cursor: pointer;
+            }
+            @media screen and (max-width:500px) {
+            right: 5%;
+            color: #fff;
+
+            }
+        }
+        & .prevImage {
+            position: absolute;
+            top: 49%;
+            left: 8%;
+            font-size: 50px;
+            z-index: 1100;
+
+            &:hover {
+                cursor: pointer;
+            }
+            @media screen and (max-width:500px) {
+            left: 5%;
+            color: #fff;
+
+            }
+        }
+        & .closeOverlay {
+            position: absolute;
+            top: 9%;
+            right: 8%;
+            font-size: 50px;
+            z-index: 1100;
+            @media screen and (max-width:500px) {
+                top: 30%;
+                color: #fff;
+                }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+}

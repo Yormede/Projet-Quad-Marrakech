@@ -1,0 +1,378 @@
+h1.tarifsTitle {
+    display: none;
+}
+
+.scroller {
+    background-color: #767676;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & a {
+        width: auto;
+        height: 25px;
+        background-color: #FFBD59;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #000;
+        padding: 10px;
+        margin: 10px 10px 0 10px;
+        &:hover, :active {
+            background-color: #977809;
+            scale: 1.05;
+        }
+    }
+
+}
+
+.underContact {
+    display: flex;
+    justify-content: center;
+}
+
+.quadTarifs {
+    background-color: #767676 ;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    & h2 {
+        color: #FFBD59;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-top: 0;
+        @media screen and (max-width:800px) {
+            font-size: 30px;
+        }
+    }
+    & img {
+        margin: auto;
+        width: 60%;
+        @media screen and (max-width:800px) {
+            width: 85%;
+        }
+        @media screen and (max-width:500px) {
+            width: 85%;
+            margin-bottom: 15px;
+        }
+    }
+    & div.underContact {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        @media screen and (max-width:500px) {
+            flex-direction: column;
+        }
+
+        & p {
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            margin-right: 15px;
+            @media screen and (max-width:800px) {
+                font-size: 15px;
+            }
+            & span {
+                color: #FFBD59;
+            }
+        }
+        & a {
+            display: flex;
+            align-items: center;
+            & svg {
+                color: green;
+                font-size: 30px;
+                margin-right: 8px;
+            }
+            font-size: 20px;
+            text-decoration: none;
+            color: #fff;
+            text-align: baseline;
+            @media screen and (max-width:800px) {
+                font-size: 15px;
+            }
+        }
+        & a:hover {
+            color: #FFBD59;
+        }
+    }
+
+    & .quadBottomDiviseur {
+        position: absolute;
+        bottom: -60px;
+        width: 100%;
+        z-index: -1;
+        & svg {
+            width: 100%;
+        }
+        @media screen and (max-width: 900px) {
+            bottom: -45px;
+        }
+        @media screen and (max-width: 480px) {
+            bottom: -40px;
+        }
+    }
+}
+
+.crossTarifs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 30px;
+
+    & h2 {
+        color: #977809;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        @media screen and (max-width:800px) {
+            font-size: 30px;
+        }
+    }
+    & img {
+        margin: auto;
+        width: 60%;
+
+        @media screen and (max-width:800px) {
+            width: 85%;
+        }
+        @media screen and (max-width:500px) {
+            width: 50%;
+            margin-bottom: 15px;
+        }
+    }
+    & div.underContact {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        @media screen and (max-width:500px) {
+            flex-direction: column;
+        }
+
+        & p {
+            font-size: 20px;
+            color: black;
+            font-weight: bold;
+            margin-right: 15px;
+            & span {
+                color: #FFBD59;
+            }
+            @media screen and (max-width:800px) {
+                font-size: 15px;
+            }
+
+        }
+        & a {
+            display: flex;
+            align-items: center;
+            & svg {
+                color: green;
+                font-size: 30px;
+                margin-right: 8px;
+            }
+            font-size: 20px;
+            text-decoration: none;
+            color: #000;
+            text-align: baseline;
+            @media screen and (max-width:800px) {
+                font-size: 15px;
+            }
+        }
+        & a:hover {
+            color: #FFBD59;
+        }
+    }
+}
+
+.dromadaireTarifs {
+    background-color: #767676 ;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 50px;
+
+    @media screen and (max-width:700px) {
+        margin-top: 30px;
+    }
+
+    & h2 {
+        color: #FFBD59;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-top: 0;
+        @media screen and (max-width:800px) {
+            font-size: 30px;
+        }
+    }
+    & img {
+        margin: auto;
+        width: 50%;
+        @media screen and (max-width:800px) {
+            width: 65%;
+        }
+        @media screen and (max-width:500px) {
+            width: 50%;
+            margin-bottom: 15px;
+        }
+    }
+    & div.underContact {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        @media screen and (max-width:500px) {
+            flex-direction: column;
+        }
+
+        & p {
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            margin-right: 15px;
+            & span {
+                color: #FFBD59;
+            }
+            @media screen and (max-width:800px) {
+                font-size: 15px;
+            }
+        }
+        & a {
+            display: flex;
+            align-items: center;
+            & svg {
+                color: green;
+                font-size: 30px;
+                margin-right: 8px;
+            }
+            font-size: 20px;
+            text-decoration: none;
+            color: #fff;
+            text-align: baseline;
+            @media screen and (max-width:800px) {
+                font-size: 15px;
+            }
+        }
+        & a:hover {
+            color: #FFBD59;
+        }
+    }
+
+    & .TopDiviseur {
+        position: absolute;
+        top: -50px;
+        width: 100%;
+        z-index: -1;
+        & svg {
+            width: 100%;
+            transform: rotate(180deg);
+        }
+        @media screen and (max-width: 900px) {
+            top: -40px;
+        }
+        @media screen and (max-width: 480px) {
+            top: -40px;
+        }
+    }
+    & .BottomDiviseur {
+        position: absolute;
+        bottom: -60px;
+        width: 100%;
+        z-index: -1;
+        & svg {
+            width: 100%;
+        }
+        @media screen and (max-width: 900px) {
+            bottom: -40px;
+        }
+    }
+}
+
+.buggyTarifs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 30px;
+    margin-bottom: 50px;
+
+    & h2 {
+        color: #977809;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        @media screen and (max-width:800px) {
+            font-size: 30px;
+        }
+    }
+    & img {
+        margin: auto;
+        width: 55%;
+        @media screen and (max-width:800px) {
+            width: 80%;
+        }
+        @media screen and (max-width:500px) {
+            width: 80%;
+            margin-bottom: 15px;
+        }
+    }
+    & div.underContact {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        @media screen and (max-width:500px) {
+            flex-direction: column;
+        }
+
+        & p {
+            font-size: 20px;
+            color: #000;
+            font-weight: bold;
+            margin-right: 15px;
+            & span {
+                color: #FFBD59;
+            }
+            @media screen and (max-width:800px) {
+                font-size: 15px;
+            }
+
+        }
+        & a {
+            display: flex;
+            align-items: center;
+            & svg {
+                color: green;
+                font-size: 30px;
+                margin-right: 8px;
+                
+            }
+            font-size: 20px;
+            text-decoration: none;
+            color: #000;
+            text-align: baseline;
+            @media screen and (max-width:800px) {
+                font-size: 15px;
+            }
+        }
+        & a:hover {
+            color: #FFBD59;
+        }
+    }
+}

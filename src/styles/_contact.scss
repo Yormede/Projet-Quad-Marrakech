@@ -1,0 +1,88 @@
+h1.contact {
+    color: #000;
+    text-align: center;
+    text-shadow: 2px 4px 20px #0000008f;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.contactSection {
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    & span {
+        color: #977809;
+    }
+    & a {
+        display: flex;
+        align-items: center;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.233);
+        & svg {
+            color: green;
+            font-size: 30px;
+            margin-right: 8px;
+        }
+        font-size: 20px;
+        text-decoration: none;
+        color: #977809;
+        text-align: baseline;
+    }
+    & a:hover {
+        color: #FFBD59;
+    }
+}
+
+.acces {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+    background-color: #FFBD59;
+    margin-top: 60px;
+    position: relative;
+
+    @media screen and (max-width: 820px) {
+        margin-top: 40px;
+    }
+    & h2 {
+        color: #FFF;
+        text-align: center;
+        text-shadow: 2px 4px 20px #000;
+        font-family: Poppins;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    & iframe {
+        border-radius: 25px;
+        height: 400px;
+        border: dotted 3px white;
+        @media screen and (max-width: 700px) {
+            width: 80%;
+        }
+    }
+    & .diviseur {
+        position: absolute;
+        top: -50px;
+        width: 100%;
+        z-index: -1;
+        & svg {
+            width: 100%;
+        }
+        @media screen and (max-width: 820px) {
+            top: -40px;
+        }
+    }
+}
